@@ -13,7 +13,7 @@ import { blogsData } from '../../data/blogsData';
 const jostFont = Jost({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Alee Conseil - Blogs",
+  title: "JumpIT - Blogs",
   description: pageMetadata.description,
   metadataBase: new URL(pageMetadata.baseUrl),
   alternates: {
@@ -23,51 +23,51 @@ export const metadata = {
     },
   },
   icons: {
-    icon: { url: 'https://www.aleeconseil.com/favicon.ico', type: 'image/x-icon', sizes: '48x48' },
+    icon: { url: '/icones.png', type: 'image/x-icon', sizes: '48x48' },
     shortcut: [
       {
-        url: 'https://www.aleeconseil.com/favicons/shortcut-icon-128.png',
+        url: '/icones.png',
         sizes: '128x128'
       },
       {
-        url: 'https://www.aleeconseil.com/favicons/shortcut-icon-192.png',
+        url: '/icones.png',
         sizes: '192x192'
       }],
     other: [
       {
         rel: 'apple-touch-icon-precomposed',
-        url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-precomposed.png',
+        url: '/icones.png',
         sizes: '180x180'
       },
       {
         rel: 'apple-touch-icon',
-        url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-76.png',
+        url: '/icones.png',
         sizes: '76x76'
       },
       {
         rel: 'apple-touch-icon',
-        url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-120.png',
+        url: '/icones.png',
         sizes: '120x120'
       },
       {
         rel: 'apple-touch-icon',
-        url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-152.png',
+        url: '/icones.png',
         sizes: '152x152'
       },
       {
         rel: 'apple-touch-icon',
-        url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-180.png',
+        url: '/icones.png',
         sizes: '180x180'
       },
       {
         rel: 'icon',
-        url: 'https://www.aleeconseil.com/favicons/icon-16.png',
+        url: '/icones.png',
         type: 'image/x-icon',
         sizes: '16x16'
       },
       {
         rel: 'icon',
-        url: 'https://www.aleeconseil.com/favicons/icon-32.png',
+        url: '/icones.png',
         type: 'image/x-icon',
         sizes: '32x32'
       }
@@ -79,7 +79,7 @@ export const metadata = {
     siteName: pageMetadata.siteName,
     url: 'https://www.aleeconseil.com',
     images: {
-      url: 'https://www.aleeconseil.com/favicon.ico',
+      url: '/icones.png',
       width: 48,
       height: 48,
     },
@@ -129,10 +129,10 @@ export default function Blogs({ }: Props) {
           },
           publisher: {
             '@type': 'Organization',
-            name: 'Alee Conseil',
+            name: 'JumpIT',
             image: {
               '@type': 'ImageObject',
-              url: 'https://www.aleeconseil.com/favicon.ico'
+              url: '/icones.png'
             }
           },
           audience: {
@@ -141,7 +141,7 @@ export default function Blogs({ }: Props) {
           },
           image: {
             '@type': 'ImageObject',
-            url: 'https://www.aleeconseil.com/favicon.ico'
+            url: '/icones.png'
           }
         }
       )
@@ -175,7 +175,7 @@ export default function Blogs({ }: Props) {
         <div className="relative parallax-blogs flex justify-start items-center w-full py-36 px-12 sm:px-24">
           {/* Overlay */}
           <div className="absolute top-0 left-0 w-full h-full z-20 bg-[#00000050]"></div>
-          <h1 className={jostFont.className + " text-white font-bold text-4xl xs:text-5xl text-left z-30"}>Alee Conseil Blogs</h1>
+          <h1 className={jostFont.className + " text-white font-bold text-4xl xs:text-5xl text-left z-30"}>JumpIT Blogs</h1>
         </div>
         <div className="rounded-t-xl flex flex-col justify-start items-center w-full bg-ac-gray gap-24 mb-24 -translate-y-5 z-30">
           <BlogPageTitle />

@@ -147,7 +147,7 @@ export default function DevisForm({ formation, formationDate }: Props) {
     return (
         <div className='flex flex-col justify-start items-center mt-10 mb-4 mx-2 py-6 px-5 box-shadow2 w-[464px] bg-white gap-5'>
             <div className="flex flex-col justify-start items-start w-full gap-3">
-                <h2 className={montserratBoldFont.className + " font-bold text-4xl text-ac-bleu text-left"}>Demande de Devis</h2>
+                <h2 className={montserratBoldFont.className + " font-bold text-4xl text-purple-600 text-left"}>Demande de Devis</h2>
                 <p className="text-xs font-semibold text-left text-black">
                     {devis.description}
                 </p>
@@ -276,7 +276,7 @@ export default function DevisForm({ formation, formationDate }: Props) {
                 </div>
             </form>
 
-            <div onClick={handleSubmit} className={"bg-ac-bleu py-3 px-6 w-full " + (!loading && "cursor-pointer")}>
+            <div onClick={handleSubmit} className={"bg-purple-600 py-3 px-6 w-full " + (!loading && "cursor-pointer")}>
                 {!loading
                     ? <p className={montserratBoldFont.className + " text-white text-base font-bold text-center uppercase"}>Envoyer</p>
                     : <div className="flex justify-center items-center gap-2.5 p-[5px]">

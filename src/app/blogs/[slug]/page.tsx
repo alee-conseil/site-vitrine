@@ -28,7 +28,7 @@ export async function generateMetadata(
     const blog = blogsData.find((blog) => blog.id === blog_id);
 
     return {
-        title: blog ? blog.title : "Alee Conseil - 404",
+        title: blog ? blog.title : "JumpIT - 404",
         description: pageMetadata.description,
         metadataBase: new URL(pageMetadata.baseUrl),
         alternates: {
@@ -38,51 +38,51 @@ export async function generateMetadata(
             },
         },
         icons: {
-            icon: { url: 'https://www.aleeconseil.com/favicon.ico', type: 'image/x-icon', sizes: '48x48' },
+            icon: { url: '/icones.png', type: 'image/x-icon', sizes: '48x48' },
             shortcut: [
                 {
-                    url: 'https://www.aleeconseil.com/favicons/shortcut-icon-128.png',
+                    url: '/icones.png',
                     sizes: '128x128'
                 },
                 {
-                    url: 'https://www.aleeconseil.com/favicons/shortcut-icon-192.png',
+                    url: '/icones.png',
                     sizes: '192x192'
                 }],
             other: [
                 {
                     rel: 'apple-touch-icon-precomposed',
-                    url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-precomposed.png',
+                    url: '/icones.png',
                     sizes: '180x180'
                 },
                 {
                     rel: 'apple-touch-icon',
-                    url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-76.png',
+                    url: '/icones.png',
                     sizes: '76x76'
                 },
                 {
                     rel: 'apple-touch-icon',
-                    url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-120.png',
+                    url: '/icones.png',
                     sizes: '120x120'
                 },
                 {
                     rel: 'apple-touch-icon',
-                    url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-152.png',
+                    url: '/icones.png',
                     sizes: '152x152'
                 },
                 {
                     rel: 'apple-touch-icon',
-                    url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-180.png',
+                    url: '/icones.png',
                     sizes: '180x180'
                 },
                 {
                     rel: 'icon',
-                    url: 'https://www.aleeconseil.com/favicons/icon-16.png',
+                    url: '/icones.png',
                     type: 'image/x-icon',
                     sizes: '16x16'
                 },
                 {
                     rel: 'icon',
-                    url: 'https://www.aleeconseil.com/favicons/icon-32.png',
+                    url: '/icones.png',
                     type: 'image/x-icon',
                     sizes: '32x32'
                 }
@@ -94,7 +94,7 @@ export async function generateMetadata(
             siteName: pageMetadata.siteName,
             url: 'https://www.aleeconseil.com',
             images: {
-                url: 'https://www.aleeconseil.com/favicon.ico',
+                url: '/icones.png',
                 width: 48,
                 height: 48,
             },
@@ -155,10 +155,10 @@ export default function Blog({ params }: Props) {
                 },
                 publisher: {
                     '@type': 'Organization',
-                    name: 'Alee Conseil',
+                    name: 'JumpIT',
                     image: {
                         '@type': 'ImageObject',
-                        url: 'https://www.aleeconseil.com/favicon.ico'
+                        url: '/icones.png'
                     }
                 },
                 audience: {
@@ -167,7 +167,7 @@ export default function Blog({ params }: Props) {
                 },
                 image: {
                     '@type': 'ImageObject',
-                    url: 'https://www.aleeconseil.com/favicon.ico'
+                    url: '/icones.png'
                 }
             }
         ]

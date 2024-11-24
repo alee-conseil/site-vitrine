@@ -43,11 +43,11 @@ export default function FormationCard({ formation_id, title, hero, image_url, pr
               width={75}
               height={75}
               alt={title} />
-            <h1 className={montserratFont.className + " text-2xl fold:text-3xl lg:text-2xl lg2:text-3xl text-ac-violet text-left font-medium w-min"}>
+            <h1 className={montserratFont.className + " text-2xl fold:text-3xl lg:text-2xl lg2:text-3xl text-purple-600 text-left font-medium w-min"}>
               {title}
             </h1>
           </div>
-          <div className="bg-ac-violet h-0.5 w-full"></div>
+          <div className="bg-purple-600 h-0.5 w-full"></div>
           <h2 className={latoFont.className + " text-black text-base text-center font-medium line-clamp-2"}>
             {hero}
           </h2>

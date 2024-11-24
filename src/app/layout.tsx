@@ -2,7 +2,6 @@ import { pageMetadata } from '@/content/general'
 import { Inter } from 'next/font/google'
 import { WebSite, WithContext } from 'schema-dts'
 import './globals.css'
-
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -16,37 +15,37 @@ export const metadata = {
     },
   },
   icons: {
-    icon: 'https://www.aleeconseil.com/favicon.ico',
+    icon: '../../public/icone.png',
     apple: 'https://www.aleeconseil.com/apple-icon.png',
-    shortcut: ['https://www.aleeconseil.com/favicons/shortcut-icon-128.png', 'https://www.aleeconseil.com/favicons/shortcut-icon-192.png'],
+    shortcut: ['../../public/icone.png', '../../public/icone.png'],
     other: [
       {
         rel: 'apple-touch-icon-precomposed',
-        url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-precomposed.png',
+        url: '../../public/icone.png',
       },
       {
         rel: 'apple-touch-icon',
-        url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-76.png',
+        url: '../../public/icone.png',
       },
       {
         rel: 'apple-touch-icon',
-        url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-120.png',
+        url: '../../public/icone.png',
       },
       {
         rel: 'apple-touch-icon',
-        url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-152.png',
+        url: '../../public/icone.png',
       },
       {
         rel: 'icon',
-        url: 'https://www.aleeconseil.com/favicons/icon-16.png',
+        url: '../../public/icone.png',
       },
       {
         rel: 'icon',
-        url: 'https://www.aleeconseil.com/favicons/icon-32.png',
+        url: '../../public/icone.png',
       },
       {
         rel: 'icon',
-        url: 'https://www.aleeconseil.com/favicons/icon-48.png',
+        url: '../../public/icone.png',
       }
     ],
   },
@@ -56,7 +55,7 @@ export const metadata = {
     siteName: pageMetadata.siteName,
     url: 'https://www.aleeconseil.com',
     images: {
-      url: 'https://www.aleeconseil.com/favicon.ico',
+      url: '../../public/icone.png',
       width: 48,
       height: 48,
     },
@@ -83,8 +82,8 @@ export const metadata = {
 const jsonLd: WithContext<WebSite> = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
-  name: 'Alee Conseil',
-  alternateName: 'Alee conseil',
+  name: 'JumpIT',
+  alternateName: 'JumpIT',
   url: 'https://www.aleeconseil.com',
 }
 

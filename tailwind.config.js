@@ -16,7 +16,7 @@ module.exports = {
         "ac-gray": "#FAFAFA",
         "ac-gray2": "#DDDDDD",
         "ac-violet": "#644E9B",
-        "ac-bleu": "#166BB3",
+        "purple-600": "#b400ff",
       },
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif']

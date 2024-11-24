@@ -1,0 +1,89 @@
+# Query: https://www.aleeconseil.com/favicon.ico
+# ContextLines: 1
+
+20 results - 7 files
+
+src/app/layout.tsx:
+  18    icons: {
+  19:     icon: 'https://i.ibb.co/r6c2LZd/icone.png',
+  20      apple: 'https://www.aleeconseil.com/apple-icon.png',
+
+  58      images: {
+  59:       url: 'https://i.ibb.co/r6c2LZd/icone.png',
+  60        width: 48,
+
+src/app/page.tsx:
+   34    icons: {
+   35:     icon: { url: 'https://i.ibb.co/r6c2LZd/icone.png', type: 'image/x-icon', sizes: '48x48' },
+   36      shortcut: [
+
+   90      images: {
+   91:       url: 'https://i.ibb.co/r6c2LZd/icone.png',
+   92        width: 48,
+
+  139          name: 'Alee Conseil',
+  140:         image: 'https://i.ibb.co/r6c2LZd/icone.png',
+  141          legalName: 'Alee Conseil',
+  142:         logo: 'https://i.ibb.co/r6c2LZd/icone.png',
+  143          url: 'https://www.aleeconseil.com',
+
+src/app/blogs/page.tsx:
+   25    icons: {
+   26:     icon: { url: 'https://i.ibb.co/r6c2LZd/icone.png', type: 'image/x-icon', sizes: '48x48' },
+   27      shortcut: [
+
+   81      images: {
+   82:       url: 'https://i.ibb.co/r6c2LZd/icone.png',
+   83        width: 48,
+
+  134                '@type': 'ImageObject',
+  135:               url: 'https://i.ibb.co/r6c2LZd/icone.png'
+  136              }
+
+  143              '@type': 'ImageObject',
+  144:             url: 'https://i.ibb.co/r6c2LZd/icone.png'
+  145            }
+
+src/app/blogs/[slug]/page.tsx:
+   40          icons: {
+   41:             icon: { url: 'https://i.ibb.co/r6c2LZd/icone.png', type: 'image/x-icon', sizes: '48x48' },
+   42              shortcut: [
+
+   96              images: {
+   97:                 url: 'https://i.ibb.co/r6c2LZd/icone.png',
+   98                  width: 48,
+
+  160                          '@type': 'ImageObject',
+  161:                         url: 'https://i.ibb.co/r6c2LZd/icone.png'
+  162                      }
+
+  169                      '@type': 'ImageObject',
+  170:                     url: 'https://i.ibb.co/r6c2LZd/icone.png'
+  171                  }
+
+src/app/conseil/page.tsx:
+  26    icons: {
+  27:     icon: { url: 'https://i.ibb.co/r6c2LZd/icone.png', type: 'image/x-icon', sizes: '48x48' },
+  28      shortcut: [
+
+  82      images: {
+  83:       url: 'https://i.ibb.co/r6c2LZd/icone.png',
+  84        width: 48,
+
+src/app/formations/page.tsx:
+  25    icons: {
+  26:     icon: { url: 'https://i.ibb.co/r6c2LZd/icone.png', type: 'image/x-icon', sizes: '48x48' },
+  27      shortcut: [
+
+  81      images: {
+  82:       url: 'https://i.ibb.co/r6c2LZd/icone.png',
+  83        width: 48,
+
+src/app/formations/[slug]/page.tsx:
+   44      icons: {
+   45:       icon: { url: 'https://i.ibb.co/r6c2LZd/icone.png', type: 'image/x-icon', sizes: '48x48' },
+   46        shortcut: [
+
+  100        images: {
+  101:         url: 'https://i.ibb.co/r6c2LZd/icone.png',
+  102          width: 48,

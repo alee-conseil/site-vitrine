@@ -25,7 +25,7 @@ export const ContactUsEmail = ({
     return (
         <Html>
             <Head />
-            <Preview>Alee Conseil - Reçu de Devis</Preview>
+            <Preview>JumpIT - Reçu de Devis</Preview>
             <Body style={main}>
                 <Container style={container}>
                     <Section style={logo}>
@@ -68,7 +68,7 @@ export const ContactUsEmail = ({
                         </Column>
                     </Row>
                     <Text style={{ textAlign: 'center', color: '#706a7b' }}>
-                        © 2023 Alee Conseil, Tout droit réservé <br />
+                        © 2023 JumpIT, Tout droit réservé <br />
                         350 Bush Street, 2nd Floor, San Francisco, CA, 94104 - USA
                     </Text>
                 </Section>
@@ -130,7 +130,7 @@ const sectionBorder = {
 };
 
 const sectionCenter = {
-    borderBottom: '2px solid #166BB3',
+    borderBottom: '2px solid #b400ff',
     width: '102px',
 };
 

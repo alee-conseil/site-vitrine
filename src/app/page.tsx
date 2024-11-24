@@ -15,7 +15,6 @@ import { pageMetadata } from '../content/general';
 import { homepage } from "../content/pages";
 import { googleMapsEmbed } from '../utils/constants';
 
-
 const montserratFont = Montserrat({ weight: "400", subsets: ["latin"] });
 const latoFont = Lato({ weight: "400", subsets: ["latin"] });
 const ibmFont = IBM_Plex_Sans({ weight: "700", subsets: ["latin"] });
@@ -32,51 +31,51 @@ export const metadata = {
     },
   },
   icons: {
-    icon: { url: 'https://www.aleeconseil.com/favicon.ico', type: 'image/x-icon', sizes: '48x48' },
+    icon: { url: '../../public/icone.png', type: 'image/x-icon', sizes: '48x48' },
     shortcut: [
       {
-        url: 'https://www.aleeconseil.com/favicons/shortcut-icon-128.png',
+        url:'../../public/icone.png',
         sizes: '128x128'
       },
       {
-        url: 'https://www.aleeconseil.com/favicons/shortcut-icon-192.png',
+        url: ['../../public/icone.png'],
         sizes: '192x192'
       }],
     other: [
       {
         rel: 'apple-touch-icon-precomposed',
-        url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-precomposed.png',
+        url: '../../public/icone.png',
         sizes: '180x180'
       },
       {
         rel: 'apple-touch-icon',
-        url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-76.png',
+        url: '../../public/icone.png',
         sizes: '76x76'
       },
       {
         rel: 'apple-touch-icon',
-        url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-120.png',
+        url: '../../public/icone.png',
         sizes: '120x120'
       },
       {
         rel: 'apple-touch-icon',
-        url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-152.png',
+        url: '../../public/icone.png',
         sizes: '152x152'
       },
       {
         rel: 'apple-touch-icon',
-        url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-180.png',
+        url: '../../public/icone.png',
         sizes: '180x180'
       },
       {
         rel: 'icon',
-        url: 'https://www.aleeconseil.com/favicons/icon-16.png',
+        url: '../../public/icone.png',
         type: 'image/x-icon',
         sizes: '16x16'
       },
       {
         rel: 'icon',
-        url: 'https://www.aleeconseil.com/favicons/icon-32.png',
+        url: '../../public/icone.png',
         type: 'image/x-icon',
         sizes: '32x32'
       }
@@ -88,7 +87,7 @@ export const metadata = {
     siteName: pageMetadata.siteName,
     url: 'https://www.aleeconseil.com',
     images: {
-      url: 'https://www.aleeconseil.com/favicon.ico',
+      url: '../../public/icone.png',
       width: 48,
       height: 48,
     },
@@ -119,8 +118,8 @@ const graph: Graph = {
       '@type': 'WebSite',
       '@id': 'https://www.aleeconseil.com',
       inLanguage: 'fr',
-      name: 'Alee Conseil',
-      alternateName: 'Alee conseil',
+      name: 'JumpIT',
+      alternateName: 'JumpIT',
       url: 'https://www.aleeconseil.com',
       offers: [
         {
@@ -136,10 +135,10 @@ const graph: Graph = {
       ],
       author: {
         '@type': 'Organization',
-        name: 'Alee Conseil',
-        image: 'https://www.aleeconseil.com/favicon.ico',
-        legalName: 'Alee Conseil',
-        logo: 'https://www.aleeconseil.com/favicon.ico',
+        name: 'JumpIT',
+        image: '/icones.png',
+        legalName: 'JumpIT',
+        logo: '/icones.png',
         url: 'https://www.aleeconseil.com',
         keywords: ['Formation', 'Conseil', 'Blog', 'Contact'],
         address: 'Rue Al Borj, Résidence Zineb, Appt12, Rabat 10020, Maroc',
@@ -152,19 +151,19 @@ const graph: Graph = {
       itemListElement: [
         {
           '@type': 'ListItem',
-          name: 'Alee Conseil - Formations',
+          name: 'JumpIT - Formations',
           item: 'https://www.aleeconseil.com/formations',
           position: 1
         },
         {
           '@type': 'ListItem',
-          name: 'Alee Conseil - Conseil',
+          name: 'JumpIT - Conseil',
           item: 'https://www.aleeconseil.com/conseil',
           position: 2
         },
         {
           '@type': 'ListItem',
-          name: 'Alee Conseil - Blogs',
+          name: 'JumpIT - Blogs',
           item: 'https://www.aleeconseil.com/blogs',
           position: 3
         },
@@ -209,13 +208,13 @@ export default function Home() {
       <Hero />
 
       {/* Nos Services */}
-      <div id='services' className="flex justify-center items-center bg-ac-bleu rounded-t-3xl w-full pb-28 px-4 pt-20">
+      <div id='services' className="flex justify-center items-center bg-purple-600 rounded-t-3xl w-full pb-28 px-4 pt-20">
         <div className="flex flex-col justify-start items-center gap-8 xm:gap-16">
           <h2 className={montserratFont.className + " font-medium text-4xl xm:text-5xl text-center text-white"}>Nos Services</h2>
           <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-20 md:gap-56">
 
             {/* Formations Service  */}
-            <div className="flex flex-col justify-start items-center gap-4 max-w-[236px]">
+            <div className="flex flex-col justify-start items-center gap-4 max-w-[236px] ">
               <Image className='w-24 h-24' width={96} height={96} src="/Homepage/formations.png" alt='Cypress Postman ...' />
               <h2 className={latoFont.className + " font-semibold text-2xl xm:text-3xl leading-7 text-center text-white"}>Formation</h2>
               <p className={latoFont.className + " font-medium text-sm xm:text-base leading-5 text-center text-white"}>
@@ -223,7 +222,7 @@ export default function Home() {
               </p>
               <Link href={"/formations"}>
                 <div className="flex justify-center items-center rounded-sm bg-white px-5 py-2 cursor-pointer">
-                  <h3 className={ibmFont.className + " text-ac-bleu uppercase text-xl font-bold"}>Catalogue</h3>
+                  <h3 className={ibmFont.className + " text-purple-600 uppercase text-xl font-bold"}>Catalogue</h3>
                 </div>
               </Link>
             </div>
@@ -236,7 +235,7 @@ export default function Home() {
               </p>
               <Link href={"/conseil"}>
                 <div className="flex justify-center items-center rounded-sm bg-white px-5 py-2 cursor-pointer">
-                  <h3 className={ibmFont.className + " text-ac-bleu uppercase text-xl font-bold"}>Services</h3>
+                  <h3 className={ibmFont.className + " text-purple-600 uppercase text-xl font-bold"}>Services</h3>
                 </div>
               </Link>
             </div>
@@ -252,7 +251,7 @@ export default function Home() {
           duration={300}
           delay={0}
         >
-          <h2 className={montserratBoldFont.className + " font-bold text-4xl text-black text-left"}><span className='text-ac-violet'>Nous</span> Trouver</h2>
+          <h2 className={montserratBoldFont.className + " font-bold text-4xl text-black text-left"}><span className='text-purple-600'>Nous</span> Trouver</h2>
           <Image src="/Homepage/hand-drawn-arrow.png" width={96} height={96} alt='Arrow' />
           <iframe
             className='w-[270px] fold:w-80 sm:w-[450px] xm:w-[400px] lg:w-[450px] rounded-2xl box-shadow2 '
@@ -271,7 +270,7 @@ export default function Home() {
           delay={300}
         >
           <div className="flex flex-col justify-start items-center gap-4 w-full">
-            <h2 className={montserratBoldFont.className + " font-bold text-4xl text-black text-left"}>Contactez-<span className='text-ac-violet'>nous</span></h2>
+            <h2 className={montserratBoldFont.className + " font-bold text-4xl text-black text-left"}>Contactez-<span className='text-purple-600 '>nous</span></h2>
             <Image src="/Homepage/hand-drawn-arrow2.png" width={96} height={96} alt='Arrow2' />
             <ContactUsForm />
           </div>
@@ -279,7 +278,7 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col justify-center items-center w-full mx-8 mt-16 mb-8 gap-8 xm:gap-16">
-        <b className={montserratFont.className + " font-medium text-4xl xm:text-5xl text-center text-ac-bleu"}>Ils Nous Font Confiance</b>
+        <b className={montserratFont.className + " font-medium text-4xl xm:text-5xl text-center text-purple-600"}>Ils Nous Font Confiance</b>
         <div className="grid grid-cols-1 sm:grid-cols-2 xm:grid-cols-3 gap-4 justify-items-center items-center justify-center">
           <div className="h-[150px] w-[280px] fold:w-[330px] xm:w-[280px] lg:w-[330px]  flex justify-center items-center bg-neutral-200 cursor-pointer group">
             <Image className='grayscale group-hover:grayscale-0 transition duration-200 my-2' src="/trustBy/RAJA.png" width={200} height={150} alt='RAJA' />
@@ -315,9 +314,9 @@ export default function Home() {
       />
 
       <div className="hidden">
-        <p>Alee Conseil</p>
-        <p>Alee conseil</p>
-        <p>alee conseil</p>
+        <p>JumpIT</p>
+        <p>JumpIT</p>
+        <p>JumpIT</p>
         <h2><strong>{`Formation Cypress`}</strong></h2>
         <h2><strong>{`Formation Postman`}</strong></h2>
         <h2><strong>{`Cypress Formation`}</strong></h2>

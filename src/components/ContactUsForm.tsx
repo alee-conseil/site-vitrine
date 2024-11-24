@@ -129,7 +129,7 @@ export default function ContactUsForm({ }: Props) {
                             name="nom"
                             type="text"
                             placeholder='Nom'
-                            className="py-2 px-5 w-full text-black"
+                            className="py-2 px-5 w-full text-black  focus:outline focus:outline-purple-600 focus:outline-2 focus:rounded  focus:outline focus:outline-purple-600 focus:outline-2 focus:rounded"
                             value={contactInputs.nom}
                             onChange={handleContactInputChange}
                         />
@@ -146,7 +146,7 @@ export default function ContactUsForm({ }: Props) {
                             name="prenom"
                             type="text"
                             placeholder='Prénom'
-                            className="py-2 px-5 w-full text-black"
+                            className="py-2 px-5 w-full text-black  focus:outline focus:outline-purple-600 focus:outline-2 focus:rounded  focus:outline focus:outline-purple-600 focus:outline-2 focus:rounded"
                             value={contactInputs.prenom}
                             onChange={handleContactInputChange}
                         />
@@ -163,7 +163,7 @@ export default function ContactUsForm({ }: Props) {
                             name="telephone"
                             type="tel"
                             placeholder='Téléphone'
-                            className="py-2 px-5 w-full text-black"
+                            className="py-2 px-5 w-full text-black  focus:outline focus:outline-purple-600 focus:outline-2 focus:rounded"
                             value={contactInputs.telephone}
                             onChange={handleContactInputChange}
                         />
@@ -180,7 +180,7 @@ export default function ContactUsForm({ }: Props) {
                             name="email"
                             type="email"
                             placeholder='Email'
-                            className="py-2 px-5 w-full text-black"
+                            className="py-2 px-5 w-full text-black  focus:outline focus:outline-purple-600 focus:outline-2 focus:rounded"
                             value={contactInputs.email}
                             onChange={handleContactInputChange}
                         />
@@ -196,7 +196,7 @@ export default function ContactUsForm({ }: Props) {
                         <textarea
                             name="message"
                             placeholder='Message'
-                            className="py-2 px-5 w-full text-black min-h-[40px]"
+                            className="py-2 px-5 w-full text-black  focus:outline focus:outline-purple-600 focus:outline-2 focus:rounded min-h-[40px]"
                             value={contactInputs.message}
                             onChange={handleContactInputChange}
                         />
@@ -204,7 +204,7 @@ export default function ContactUsForm({ }: Props) {
                 </div>
             </form>
             
-            <div onClick={handleSubmit} className={"bg-ac-bleu py-3 px-6 w-full " + (!loading && "cursor-pointer")}>
+            <div onClick={handleSubmit} className={"bg-purple-600 py-3 px-6 w-full " + (!loading && "cursor-pointer")}>
                 {!loading
                     ? <p className={montserratBoldFont.className + " text-white text-base font-bold text-center uppercase"}>Envoyer</p>
                     : <div className="flex justify-center items-center gap-2.5 p-[5px]">

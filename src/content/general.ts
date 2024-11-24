@@ -1,12 +1,12 @@
 export const pageMetadata = {
     baseUrl: "https://www.aleeconseil.com",
-    siteName: "Alee Conseil",
+    siteName: "JumpIT",
     title: "Partenaire de qualité en formation et automatisation des tests",
-    description: "Alee Conseil est spécialisée dans conseil et la formation en qualité logiciel. Elle propose des produits à destinations du grand public et des entreprises"
+    description: "JumpIT est spécialisée dans conseil et la formation en qualité logiciel. Elle propose des produits à destinations du grand public et des entreprises"
 }
 
 export const footer = {
-    copyright1: `Copyright © 2023 Alee Conseil`,
+    copyright1: `Copyright © 2023 JumpIT`,
     copyright2: `Tous droits réservés`,
     address: `Rue Al Borj, Résidence Zineb, Appt12, Rabat 10020, Maroc`, 
     phone: `+212 6 62 88 28 41`,

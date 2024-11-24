@@ -32,7 +32,7 @@ export async function generateMetadata(
   const formation_id = params.slug;
   const formation = formationsData.find((formation) => formation.formation_id === formation_id);
   return {
-    title: formation ? "Alee Conseil - Formation " + formation.title : "Alee Conseil - 404",
+    title: formation ? "JumpIT - Formation " + formation.title : "JumpIT - 404",
     description: pageMetadata.description,
     metadataBase: new URL(pageMetadata.baseUrl),
     alternates: {
@@ -42,51 +42,51 @@ export async function generateMetadata(
       },
     },
     icons: {
-      icon: { url: 'https://www.aleeconseil.com/favicon.ico', type: 'image/x-icon', sizes: '48x48' },
+      icon: { url: '/icones.png', type: 'image/x-icon', sizes: '48x48' },
       shortcut: [
         {
-          url: 'https://www.aleeconseil.com/favicons/shortcut-icon-128.png',
+          url: '/icones.png',
           sizes: '128x128'
         },
         {
-          url: 'https://www.aleeconseil.com/favicons/shortcut-icon-192.png',
+          url: '/icones.png',
           sizes: '192x192'
         }],
       other: [
         {
           rel: 'apple-touch-icon-precomposed',
-          url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-precomposed.png',
+          url: '/icones.png',
           sizes: '180x180'
         },
         {
           rel: 'apple-touch-icon',
-          url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-76.png',
+          url: '/icones.png',
           sizes: '76x76'
         },
         {
           rel: 'apple-touch-icon',
-          url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-120.png',
+          url: '/icones.png',
           sizes: '120x120'
         },
         {
           rel: 'apple-touch-icon',
-          url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-152.png',
+          url: '/icones.png',
           sizes: '152x152'
         },
         {
           rel: 'apple-touch-icon',
-          url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-180.png',
+          url: '/icones.png',
           sizes: '180x180'
         },
         {
           rel: 'icon',
-          url: 'https://www.aleeconseil.com/favicons/icon-16.png',
+          url: '/icones.png',
           type: 'image/x-icon',
           sizes: '16x16'
         },
         {
           rel: 'icon',
-          url: 'https://www.aleeconseil.com/favicons/icon-32.png',
+          url: '/icones.png',
           type: 'image/x-icon',
           sizes: '32x32'
         }
@@ -98,7 +98,7 @@ export async function generateMetadata(
       siteName: pageMetadata.siteName,
       url: 'https://www.aleeconseil.com',
       images: {
-        url: 'https://www.aleeconseil.com/favicon.ico',
+        url: '/icones.png',
         width: 48,
         height: 48,
       },
@@ -158,7 +158,7 @@ export default function Page({ params }: Props) {
         },
         provider: {
           '@type': 'Organization',
-          name: "Alee Conseil",
+          name: "JumpIT",
         },
         hasCourseInstance: {
           '@type': 'CourseInstance',
@@ -187,7 +187,7 @@ export default function Page({ params }: Props) {
             description: course,
             provider: {
               '@type': 'Organization',
-              name: "Alee Conseil"
+              name: "JumpIT"
             },
           }
         }),
@@ -282,7 +282,7 @@ export default function Page({ params }: Props) {
           <div className="parallax-formations absolute inset-0 bg-fixed bg-center"></div>
           {/* Overlay */}
           <div className="absolute top-0 left-0 w-full h-full z-20 bg-[#00000050]"></div>
-          <div className="flex flex-col justify-start items-center mt-20 mb-24 mx-4 sm:ml-[10%] xm:ml-[5%] formation:ml-[15%] rounded-xl bg-ac-bleu gap-3 py-3 px-4 sm:py-6 sm:px-8 xm:px-12 z-30">
+          <div className="flex flex-col justify-start items-center mt-20 mb-24 mx-4 sm:ml-[10%] xm:ml-[5%] formation:ml-[15%] rounded-xl bg-purple-600 gap-3 py-3 px-4 sm:py-6 sm:px-8 xm:px-12 z-30">
             <h1 className={montserratFont.className + " text-3xl sm:text-4xl xm:text-5xl font-bold text-white text-center max-w-[270px] fold:max-w-[350px] xs:max-w-md"}>{`Formation ${formation.title}`}</h1>
             <h2 className={latoFont.className + " text-xs sm:text-sm xm:text-base font-medium text-white text-center max-w-[300px] sm:max-w-sm"}>
               {formation.hero}
@@ -353,7 +353,7 @@ export default function Page({ params }: Props) {
             <div className={latoFont.className + " flex flex-col justify-start items-start gap-8 max-w-xl"}>
 
               {/* Description */}
-              <div className="flex justify-center sm:justify-start items-center bg-ac-bleu rounded-md w-full">
+              <div className="flex justify-center sm:justify-start items-center bg-purple-600 rounded-md w-full">
                 <p className={montserratFont.className + " text-xl fold:text-2xl xs:text-3xl text-center text-white font-semibold rounded-full py-2 px-4"}>Description</p>
               </div>
               <div className="flex flex-col justify-start items-start gap-2">
@@ -367,7 +367,7 @@ export default function Page({ params }: Props) {
               </div>
 
               {/* Objectifs pédagogiques */}
-              <div className="flex justify-center sm:justify-start items-center bg-ac-bleu rounded-md w-full">
+              <div className="flex justify-center sm:justify-start items-center bg-purple-600 rounded-md w-full">
                 <p className={montserratFont.className + " text-xl fold:text-2xl xs:text-3xl text-center text-white font-semibold rounded-full py-2 px-4"}>Objectifs pédagogiques</p>
               </div>
               <div className="flex flex-col justify-start items-start gap-2">
@@ -381,7 +381,7 @@ export default function Page({ params }: Props) {
               </div>
 
               {/* Programme */}
-              <div className="flex justify-center sm:justify-start items-center bg-ac-bleu rounded-md w-full">
+              <div className="flex justify-center sm:justify-start items-center bg-purple-600 rounded-md w-full">
                 <p className={montserratFont.className + " text-xl fold:text-2xl xs:text-3xl text-center text-white font-semibold rounded-full py-2 px-4"}>Programme</p>
               </div>
               <div className="flex flex-col justify-start items-start gap-6">
@@ -404,7 +404,7 @@ export default function Page({ params }: Props) {
               </div>
 
               {/* Public Cible */}
-              <div className="flex justify-center sm:justify-start items-center bg-ac-bleu rounded-md w-full">
+              <div className="flex justify-center sm:justify-start items-center bg-purple-600 rounded-md w-full">
                 <p className={montserratFont.className + " text-xl fold:text-2xl xs:text-3xl text-center text-white font-semibold rounded-full py-2 px-4"}>Public Cible</p>
               </div>
               <div className="flex flex-col justify-start items-start gap-2">
@@ -418,7 +418,7 @@ export default function Page({ params }: Props) {
               </div>
 
               {/* Prérequis */}
-              <div className="flex justify-center sm:justify-start items-center bg-ac-bleu rounded-md w-full">
+              <div className="flex justify-center sm:justify-start items-center bg-purple-600 rounded-md w-full">
                 <p className={montserratFont.className + " text-xl fold:text-2xl xs:text-3xl text-center text-white font-semibold rounded-full py-2 px-4"}>Prérequis</p>
               </div>
               <div className="flex flex-col justify-start items-start gap-2">
@@ -451,7 +451,7 @@ export default function Page({ params }: Props) {
                 <Image src={formation.image_url} width={200} height={200} alt={`Formation ${formation.title}`} />
                 <div className="w-full xm:w-[140%] h-px bg-[#888888]"></div>
                 <Link href={{ pathname: '/devis', query: { formation: formation.formation_id, date: nextDates[0] } }}>
-                  <div className="flex justify-center items-center bg-ac-bleu rounded-full py-3 xm:py-4 px-3 sm:px-4 xm:px-8">
+                  <div className="flex justify-center items-center bg-purple-600 rounded-full py-3 xm:py-4 px-3 sm:px-4 xm:px-8">
                     <p className={ibmFont.className + " text-sm xs:text-base font-bold text-white uppercase text-center"}>Recevoir un devis</p>
                   </div>
                 </Link>
@@ -462,7 +462,7 @@ export default function Page({ params }: Props) {
             <div className={montserratFont.className + " flex flex-col xm:flex-row justify-between items-stretch w-full gap-8 xm:gap-0"}>
               <div className="flex flex-col justify-start items-center gap-4 xm:gap-10 xm:max-w-[125px]">
                 <div className="flex justify-center items-center gap-2.5">
-                  <RiCopperCoinLine className="fill-ac-bleu" size={25} />
+                  <RiCopperCoinLine className="fill-purple-600" size={25} />
                   <p className="text-xl font-bold uppercase text-black text-center">Prix</p>
                 </div>
                 <p className="text-base font-medium text-center text-black uppsercase whitespace-normal"><span className="font-bold">{formation.price}</span> <span>{currency}</span> HT / personne</p>
@@ -470,7 +470,7 @@ export default function Page({ params }: Props) {
               <div className="hidden xm:block w-0.5 bg-[#888888]"></div>
               <div className="flex flex-col justify-start items-center gap-4 xm:gap-10 xm:max-w-[125px]">
                 <div className="flex justify-center items-center gap-2.5">
-                  <BiTimeFive className="fill-ac-bleu" size={25} />
+                  <BiTimeFive className="fill-purple-600" size={25} />
                   <p className="text-xl font-bold uppercase text-black text-center">Durée</p>
                 </div>
                 <p className="text-base font-medium text-center text-black uppsercase"><span className="font-bold">{Math.ceil(formation.duration / dailyHours)}</span> jours (<span className="font-bold">{formation.duration}</span>&nbsp;heures)</p>
@@ -481,9 +481,9 @@ export default function Page({ params }: Props) {
             <div className="grid grid-cols-1 xm:grid-cols-2 justify-center items-stretch gap-2">
               {nextDates.map((date) => {
                 return (
-                  <Link key={date} href={{ pathname: '/devis', query: { formation: formation.formation_id, date: date } }} className="flex flex-row xm:flex-col justify-center items-center py-2 px-4 bg-white rounded-xl cursor-pointer border border-ac-bleu hover:bg-ac-bleu group">
-                    <p className="xm:hidden text-lg text-ac-bleu text-center font-bold group-hover:text-white">{readableDateFromString(date).split(" ").join(" ")}</p>
-                    <p className="hidden xm:block text-lg text-ac-bleu text-center font-bold group-hover:text-white">{readableDateFromString(date).split(" ").slice(0, 2).join(" ")}</p>
+                  <Link key={date} href={{ pathname: '/devis', query: { formation: formation.formation_id, date: date } }} className="flex flex-row xm:flex-col justify-center items-center py-2 px-4 bg-white rounded-xl cursor-pointer border border-purple-600 hover:bg-purple-600 group">
+                    <p className="xm:hidden text-lg text-purple-600 text-center font-bold group-hover:text-white">{readableDateFromString(date).split(" ").join(" ")}</p>
+                    <p className="hidden xm:block text-lg text-purple-600 text-center font-bold group-hover:text-white">{readableDateFromString(date).split(" ").slice(0, 2).join(" ")}</p>
                     <p className="hidden xm:block text-base text-black text-center font-medium group-hover:text-gray-300">{readableDateFromString(date).split(" ")[readableDateFromString(date).split(" ").length - 1]}</p>
                   </Link>
                 )

@@ -53,7 +53,7 @@ export default function Devis({ }: Props) {
             <ReturnToTop />
             <div className="flex flex-col justify-start items-center w-full h-full bg-ac-gray mb-24">
                 <Navbar />
-                <div className="flex w-full h-44 bg-ac-bleu rounded-b-lg xs:rounded-b-xl sm:rounded-b-2xl xm:rounded-b-3xl -mb-28"></div>
+                <div className="flex w-full h-44 bg-purple-600 rounded-b-lg xs:rounded-b-xl sm:rounded-b-2xl xm:rounded-b-3xl -mb-28"></div>
                 <div className="flex justify-center items-center w-full bg-transparent -translate-y-6 rounded-t-3xl">
                     <DevisForm
                         formation={namifySlug(formation)}

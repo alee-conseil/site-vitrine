@@ -34,7 +34,7 @@ export default function Navbar({ }: Props) {
                             <p className="block py-2 pl-3 pr-4 text-gray-900 rounded md:border-0 ">Blog</p>
                         </Link>
                         <Link href={"/contactez-nous"}>
-                            <li className="w-11/12 sm:w-10/12 flex justify-center items-center bg-ac-violet rounded-lg gap-1 py-2.5 px-5 mt-2 cursor-pointer">
+                            <li className="w-11/12 sm:w-10/12 flex justify-center items-center bg-purple-600 rounded-lg gap-1 py-2.5 px-5 mt-2 cursor-pointer">
                                 <p className="text-base uppercase font-bold text-center text-white whitespace-nowrap">Contactez-nous</p>
                                 <HiOutlineArrowRight size={25} color='white' />
                             </li>
@@ -44,7 +44,7 @@ export default function Navbar({ }: Props) {
                 {/* Logo  */}
                 <Link href={"/"}>
                     <div className="flex w-36 h-20 overflow-hidden cursor-pointer">
-                        <Image className='w-36 h-20 object-cover object-center' src="/logo.png" height={400} width={400} alt='Alee Conseil' />
+                        <Image className='w-30 h-30 object-cover object-center' src="/icone.png" height={300} width={300} alt='JumpIT' />
                     </div>
                 </Link>
                 {/* Navs  */}
@@ -64,7 +64,7 @@ export default function Navbar({ }: Props) {
                 <div className="flex justify-center items-center gap-4">
                     <div className="w-6 flex justify-center items-center cursor-pointer hover:drop-shadow-md"></div>
                     <Link href={"/contactez-nous"}>
-                        <div className="hidden xm:flex justify-center items-center bg-ac-violet rounded-full gap-1 py-2.5 px-5 w-fit cursor-pointer">
+                        <div className="hidden xm:flex justify-center items-center bg-purple-600 rounded-full gap-1 py-2.5 px-5 w-fit cursor-pointer">
                             <p className="text-base uppercase font-bold text-center text-white whitespace-nowrap select-none">Contactez-nous</p>
                             <HiOutlineArrowRight size={25} color='white' />
                         </div>

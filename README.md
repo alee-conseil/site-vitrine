@@ -1,8 +1,8 @@
-# Site Vitrine Alee Conseil
+# Site Vitrine JumpIT
 
 <div align="center"><img src="https://i.ibb.co/XXT3608/logo.png" /></div>
 
-Bienvenue sur le Site de Alee Conseil ! Ce site affiche nos solutions en domaines de formations technologiques d'automation et en domaine de conseil.
+Bienvenue sur le Site de JumpIT ! Ce site affiche nos solutions en domaines de formations technologiques d'automation et en domaine de conseil.
 
 ## Démo
 Découvrez notre démo en direct [ici](https://www.aleeconseil.com).
@@ -51,4 +51,4 @@ Pour toute header ou demande, vous pouvez nous contacter à contact@example.com.
 
 ---
 
-© 2023 Alee Conseil. Tous droits réservés.
+© 2023 JumpIT. Tous droits réservés.
